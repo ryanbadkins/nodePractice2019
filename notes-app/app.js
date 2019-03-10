@@ -1,5 +1,7 @@
-const fs = require('fs')
+const chalk = require('chalk');
+const notejs = require('./notes.js');
 
-fs.writeFileSync('notes.txt','My name is Ryan');
 
-fs.appendFileSync('notes.txt',', boiiii')
+const note = notejs();
+console.log(chalk.green('Success!'));
+
