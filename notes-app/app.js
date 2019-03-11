@@ -23,7 +23,7 @@ yargs.command({
         }
     },
     handler: function(argv){
-        console.log('Title: '+ argv.title + '\nAnd so it was told...'+ argv.body)
+        notejs.addNote(argv.title,argv.body)
     }
 })
 
