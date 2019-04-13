@@ -29,8 +29,8 @@ const product = {
 // console.log(stock)
 // console.log(rating)
 
-const trans =(type, {label, stock})=>{
+const trans =(type, {label, stock = 0}={})=>{
     console.log(type, label, stock)
 }
 
-trans('order',product)
+trans('order', product)
